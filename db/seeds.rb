@@ -4,7 +4,7 @@ end
 
 User.create! :email => "user@example.com", :password => "doorkeeper", :password_confirmation => "doorkeeper"
 
-app = Doorkeeper::Application.create! :name => "Doorkeeper Sinatra Client", :redirect_uri => "http://doorkeeper-sinatra.herokuapp.com/callback"
+app = Doorkeeper::Application.create! :name => "Exaka Client", :redirect_uri => "http://localhost:3001/omniauth/exaka/callback"
 
 puts "Application: "
 puts "name: #{app.name}"
